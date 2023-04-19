@@ -1,0 +1,407 @@
+* {
+    padding:0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width:100%;
+    
+}
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+    background:rgb(219, 219, 219);
+}
+header ul {
+    margin:30px 0;
+}
+
+
+header ul a {
+    
+    margin: 20px 20px;
+    padding:10px 20px;
+    border:1px solid rgb(98, 97, 97);
+    border-radius: 15px;
+    color:#111;
+    background:#fff;
+
+}
+header ul a:active {
+    background:#eee;
+
+}
+/*------------------------------*/
+.container {
+    position:fixed;
+    top:5rem;
+    left:0;
+    right:0;
+    width:100%;
+    height:auto;
+
+
+
+}
+.container .index-form{
+    padding:10px 20px;
+}
+.container .index-form form{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    gap:5px;
+    
+}
+.container .index-form form input {
+      border:none;
+      outline:none;
+      padding:10px 10px;
+      width:100%;
+      height:30px;
+}
+.container .index-form form input[type="text"]{
+    border-bottom: 1px solid rgb(225, 224, 224);
+}
+.container .index-form form input[type="number"]{
+    border:1px solid #111;
+    width:30px;
+    height:20px;
+    padding:0;
+}
+.container .index-form form input[type="submit"]{
+        width:100px;
+        border:1px solid #111;
+        padding:0;
+        border-radius:  5px;
+        cursor:pointer;
+}
+.index-table {
+    width:100%;
+    padding:10px 5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+.index-table table {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(175, 174, 174);
+
+
+}
+.index-table table tr td,th {
+    padding:10px;
+    text-align: center;
+}
+
+.index-table table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.scrollbar {
+    max-height: 275px;
+    width:100%;
+    overflow-y:scroll;
+}
+.scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .total-in-day {
+       width:100%;
+       height:25px;
+       text-align: right;
+       padding:10px 14rem;
+       background-color: antiquewhite;
+       height:40px;
+  }
+  .end-btn {
+       width:100%;
+       text-align: right;
+       padding:10px 5rem;
+  }
+  .end-btn  input {
+    border:1px solid #111;
+    padding:10px 20px;
+    background:#eee;
+    color:#111;
+    border-radius: 15px;
+    cursor:pointer;
+  }
+  /*--------------*/
+.search {
+      background:rgb(137, 88, 88);
+
+    width:35rem;
+    height:40px;
+    display:flex;
+}  
+.search input {
+    width:85%;
+    height:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+.search label {
+    width:15%;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+    cursor:pointer;
+
+}
+.data {
+    padding:5rem 9%;
+    width:100%;
+}
+.data .data-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+ }
+
+.data .data-container .data-box {
+     width:100%;
+} 
+.data .data-container .data-box table {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(175, 174, 174);
+}
+.data .data-container .data-box  table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.data .data-container .data-box  table tr th,td {
+    padding:10px;
+    text-align: center;
+}
+.total {
+    width:100%;
+    background-color: antiquewhite;
+    text-align: center;
+    padding:10px 30px;
+}
+.total p {
+    font-size: 25px;
+    font-weight: 600;
+}
+/* nHập hàng */
+.nhaphang {
+    padding:5rem 0;
+}
+.nhaphang .index-form{
+    padding:10px 20px;
+}
+.nhaphang .index-form form{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    gap:5px;
+    
+}
+.nhaphang .index-form form input {
+      border:none;
+      outline:none;
+      padding:10px 10px;
+      width:100%;
+      height:30px;
+}
+.nhaphang .index-form form input[type="text"]{
+    border-bottom: 1px solid rgb(225, 224, 224);
+}
+.nhaphang .index-form form input[type="number"]{
+    border:1px solid #111;
+    width:30px;
+    height:20px;
+    padding:0;
+}
+.nhaphang .index-form form input[type="submit"]{
+        width:100px;
+        border:1px solid #111;
+        padding:0;
+        border-radius:  5px;
+        cursor:pointer;
+}
+/* update php*/
+.update {
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.update h1 {
+    text-align: center;
+}
+.update form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:40rem;
+
+    padding:10px 15px;
+
+}
+.update form  input[type="text"]{
+    width:100%;
+    height:40px;
+    padding:10px;
+    border:none;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    outline:none;
+
+}
+
+.update form  input[type="number"]{
+    width:40px;
+    height:20px;
+    margin:10px 0;
+
+}
+.update form  input[type="submit"] {
+    width:7rem;
+    height:40px;
+     cursor:pointer;
+}
+/* dơn hang */
+.detail {
+    padding:6rem 5%;
+}
+.detail  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.detail-container {
+    display:flex;
+
+    gap:10px;
+}
+.thongtinkh {
+    flex: 1 1 50%;
+    padding:30px 20px;
+}
+.thongtindonhang {
+    flex: 1 1 50%;
+
+}
+.thongtinkh p {
+    font-size: 25px;
+    
+ 
+}
+.thongtinkh p  span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.thongtindonhang .thongtindonhang-table {
+    max-height:23rem;
+    overflow-y: scroll;
+}
+.thongtindonhang .thongtindonhang-table table  {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(172, 172, 172);
+   
+  
+
+}
+.thongtindonhang .thongtindonhang-table table tr:nth-child(even){
+    background-color: #f2f2f2;
+    }
+.thongtindonhang .image {
+    width:70px;
+    height:70px;
+    overflow:hidden
+}
+.thongtindonhang .image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.thongtindonhang-total {
+    text-align: right;
+    padding:10px 9rem;
+    width:100%;
+    background: antiquewhite;
+    margin:10px 0;
+}
+.online {
+    padding: 10px 5%;
+    width:100%;
+    height:auto;
+}
+.online div table {
+    width:100%;
+    height:100%;
+}
+.online div  table  {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(172, 172, 172);
+   
+  
+
+}
+.online div table tr td,th {
+    padding:10px;
+    text-align: center;
+}
+.online div  table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#btna {
+    margin:5px 10px;
+}
+/* uodate data trang thai*/
+
+.update-data-cho {
+    width:80px;
+    height:40px;
+    border:1px solid #111;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color:#fff;
+
+}
+.update-data-dang {
+    width:80px;
+    height:40px;
+    border:1px solid #111;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darkorange;
+    color:#fff;
+}
+.update-data-da {
+    width:80px;
+    height:40px;
+    border:1px solid #111;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color:#fff;
+}
+.update-box {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
